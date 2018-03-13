@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F1FA40AF-1272-EB01-3A6D-83931E0CEFF6" name="zpravy">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:51:53 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="FEA68D73-5949-C170-437D-8B1432784100">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:52:01 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="text" id="D487DC2F-9420-13DC-1141-751C2BCFF4D0">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:52:13 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="CBCDFE6B-D867-26D4-285E-2E77845B3139">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 19:01:11 UTC</createdTime>
+<generatorID>F68B7F2F-11EF-781A-7F8F-D0164BF6636C</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<referedAttribute>90F326CF-D028-3B1C-A36C-6850B7A19AF0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id6" id="9B91C612-23B1-300A-D5A0-58A00EE97A94">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 19:17:41 UTC</createdTime>
+<generatorID>F68B7F2F-11EF-781A-7F8F-D0164BF6636C</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<referedAttribute>D04ADE06-67F0-BBA9-B010-0D41033A6B53</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="60B65F82-73CD-3F9C-0FD7-1E614D3C2D8D" name="zpravy PK">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:52:11 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FEA68D73-5949-C170-437D-8B1432784100</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

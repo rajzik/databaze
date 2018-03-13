@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B0BC1ECA-9D1B-B0C7-EFE5-AF4AA0FE31D9" name="cinnosti">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:41:38 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="0A5D7F6D-3FA7-3A5B-A2A6-0C01CF10C664">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:41:45 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazev" id="AC843938-62F3-2500-8359-064256AEACB8">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:41:59 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="2B98BD4C-11DF-79B1-5ABE-88E16F3E2EDA">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:55:52 UTC</createdTime>
+<generatorID>CD0F6AD0-599B-4126-F2DA-6B7C9C272517</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<referedAttribute>90F326CF-D028-3B1C-A36C-6850B7A19AF0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id6" id="E5B916DE-6EC7-565B-8443-C11EFB646EF3">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 19:17:41 UTC</createdTime>
+<generatorID>CD0F6AD0-599B-4126-F2DA-6B7C9C272517</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<referedAttribute>D04ADE06-67F0-BBA9-B010-0D41033A6B53</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2CBD427C-0E56-16B0-4537-185194A5B811" name="cinnosti PK">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:41:57 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0A5D7F6D-3FA7-3A5B-A2A6-0C01CF10C664</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="69D39542-2F90-A96E-4557-23508F37CDF3" name="mista">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:42:48 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="F542D67D-3B45-B6BD-0264-CE6046E84842">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:42:54 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ulice" id="5FB6C0EA-522C-B16E-9001-C9C460915C0D">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:43:03 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="psc" id="370E0E9C-B737-1D11-A1A1-1D449BBD4896">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:43:17 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mesto" id="C457730F-E812-D04C-99AA-6BDB413C1350">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:43:34 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="mestka_cast" id="050FFA08-D05D-CDBC-47C0-9F43115E6A1C">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:43:46 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="okres" id="03373EC3-A785-E5EC-D9AA-1797405B2CD2">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:44:08 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="kraj" id="3106C5DE-BB4A-7659-CB18-848E9E5A39CD">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:44:59 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="F16BDDE2-2712-4FBE-92AB-C95AE1C293F3">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:57:45 UTC</createdTime>
+<generatorID>5EAD7211-9D0C-67CF-E3A4-E008E6D3E36A</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<referedAttribute>90F326CF-D028-3B1C-A36C-6850B7A19AF0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id6" id="00C0B572-EAF9-07B3-F363-734E71997BA4">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 19:17:41 UTC</createdTime>
+<generatorID>5EAD7211-9D0C-67CF-E3A4-E008E6D3E36A</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<referedAttribute>D04ADE06-67F0-BBA9-B010-0D41033A6B53</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="24F44ECF-2220-20AD-8B7C-93DA57EA58FE" name="mista PK">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:43:02 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F542D67D-3B45-B6BD-0264-CE6046E84842</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4DEB259C-89F8-7CC0-782A-92E028167FEF" name="Analitika">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 19:15:10 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="E158B40E-0E77-6EA3-B741-F55B3D07B7A2">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 19:15:16 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="retezec" id="5C78D140-C6B2-D0A9-4DAA-326A50A45280">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 19:15:26 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="507BA36F-5D43-72DC-97A5-B65ACAE8A44B">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 19:17:29 UTC</createdTime>
+<generatorID>28833696-19F5-516A-8635-4761CA36483E</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<referedAttribute>1A8C7A7E-3532-9B87-4751-BBFE40ACB09C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="0BC53EE8-259F-92DB-34D8-35C9B7D302C8">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 19:17:37 UTC</createdTime>
+<generatorID>43F7E161-4226-ADF2-6FF2-9EB49660816B</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<referedAttribute>90F326CF-D028-3B1C-A36C-6850B7A19AF0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id6" id="04C25688-C4B1-E7B1-A553-A1FDFB8E1A26">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 19:17:41 UTC</createdTime>
+<generatorID>43F7E161-4226-ADF2-6FF2-9EB49660816B</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<referedAttribute>D04ADE06-67F0-BBA9-B010-0D41033A6B53</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="19DAD17E-C186-D2AC-E3FA-5E154A4AF598" name="Analitika PK">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 19:15:24 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E158B40E-0E77-6EA3-B741-F55B3D07B7A2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

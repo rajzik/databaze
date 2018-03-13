@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="prvniprojekt" id="CDB4D79C-1C6B-9F74-B1F7-77AAE2236CF1" version="3.5">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:29:01 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CDB4D79C-1C6B-9F74-B1F7-77AAE2236CF1</designId>
+</OSDM_Design>

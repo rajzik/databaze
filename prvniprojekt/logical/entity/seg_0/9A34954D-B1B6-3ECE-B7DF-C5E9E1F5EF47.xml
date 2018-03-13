@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9A34954D-B1B6-3ECE-B7DF-C5E9E1F5EF47" name="klicova_slova">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:49:33 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="2881AE4B-1702-078F-5399-BF5E3DA4D581">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:49:43 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="text" id="E8677DD0-50AA-1F12-9579-B6C805914E96">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:49:52 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="69B9CD28-E9C8-0CDE-4600-FE74D45E2EB5">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:59:34 UTC</createdTime>
+<generatorID>21C64216-69FD-E038-9330-FD15811D4A92</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<referedAttribute>0A5D7F6D-3FA7-3A5B-A2A6-0C01CF10C664</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A0EC726B-F45F-D04C-1290-7A39C34935B0" name="klicova_slova PK">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-13 18:49:50 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<engineerTo>
+<item key="71D99179-8166-308D-728D-F53BEB4849E8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2881AE4B-1702-078F-5399-BF5E3DA4D581</attributeRef>
+<attributeRef>69B9CD28-E9C8-0CDE-4600-FE74D45E2EB5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
