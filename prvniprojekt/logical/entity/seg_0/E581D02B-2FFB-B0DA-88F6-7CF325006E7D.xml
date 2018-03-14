@@ -31,6 +31,15 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="ico" id="F3439882-8E10-E7E9-3B15-98AB6D059E5F">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 22:09:36 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="BC48EA13-321B-0DF4-2A30-C7B1093B0B4F" name="pravnicke_osoby PK">

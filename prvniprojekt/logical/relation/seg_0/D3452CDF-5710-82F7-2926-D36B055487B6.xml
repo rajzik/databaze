@@ -4,14 +4,15 @@
 <createdTime>2018-03-14 18:55:29 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <sourcePk>812CF153-37B6-6EC5-1E45-7FA456490050</sourcePk>
-<identifying>true</identifying>
-<nameOnSource>je v</nameOnSource>
+<targetPk>FDD82099-4C6A-A44B-3AE7-479BFA7E176F</targetPk>
+<identifying>false</identifying>
+<nameOnSource>je v kontaktu</nameOnSource>
 <nameOnTarget>ma typ</nameOnTarget>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>395AE87A-787B-9FD0-DB2F-84D8E92D1288</sourceEntity>
-<targetCardinalityString>*</targetCardinalityString>
+<targetCardinalityString>1</targetCardinalityString>
 <targetEntity>199F78FA-AE92-29E4-830E-FD811AFE6E5D</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>

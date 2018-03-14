@@ -31,6 +31,17 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id1" id="7FE0335B-B477-AE46-D259-952AE7F783F6">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 22:10:53 UTC</createdTime>
+<generatorID>D3452CDF-5710-82F7-2926-D36B055487B6</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>9248C542-83BE-DB4A-9AE2-C3DDE3A3C17E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="812CF153-37B6-6EC5-1E45-7FA456490050" name="typ_kontaktu PK">
