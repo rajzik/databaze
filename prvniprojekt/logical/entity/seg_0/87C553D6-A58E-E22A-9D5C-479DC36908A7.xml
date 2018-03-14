@@ -84,6 +84,17 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id3" id="F9658DA1-48F2-0AA5-E23C-BE955BAD3EDD">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 19:01:43 UTC</createdTime>
+<generatorID>445878D0-FAE4-BC68-A6FC-121D86FE81A5</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>D9A0A0BE-ECC3-C4BB-3758-7604723EB2E9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="8BE14EC0-B998-575F-0C4E-CB173CFEAE33" name="uzivatele PK">
