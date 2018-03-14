@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_27" directorySegmentName="seg_0" id="EC8CDD6A-795B-09BA-45AA-D5002C2411CD">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:56:01 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<sourcePk>8BE14EC0-B998-575F-0C4E-CB173CFEAE33</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>muze mit kontakty</nameOnSource>
+<nameOnTarget>ma</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>87C553D6-A58E-E22A-9D5C-479DC36908A7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>199F78FA-AE92-29E4-830E-FD811AFE6E5D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
