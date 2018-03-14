@@ -53,6 +53,17 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id3" id="DDF59A14-1DA5-31AD-CE59-B3070FFA752C">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 23:33:11 UTC</createdTime>
+<generatorID>32F37EB8-4A5A-707D-5B3B-56F604640A38</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>F542D67D-3B45-B6BD-0264-CE6046E84842</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="19DAD17E-C186-D2AC-E3FA-5E154A4AF598" name="Analitika PK">

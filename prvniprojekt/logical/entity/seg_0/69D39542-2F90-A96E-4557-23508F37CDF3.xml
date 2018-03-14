@@ -96,6 +96,17 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id2" id="869DDF60-5A54-8555-E00B-D0D1E26354F8">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 23:32:52 UTC</createdTime>
+<generatorID>32F37EB8-4A5A-707D-5B3B-56F604640A38</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>E158B40E-0E77-6EA3-B741-F55B3D07B7A2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="24F44ECF-2220-20AD-8B7C-93DA57EA58FE" name="mista PK">
