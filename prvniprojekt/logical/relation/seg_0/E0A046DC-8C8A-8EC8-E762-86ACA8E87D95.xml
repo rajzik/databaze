@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="podoblast" directorySegmentName="seg_0" id="E0A046DC-8C8A-8EC8-E762-86ACA8E87D95">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 17:09:43 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<targetPk>24F44ECF-2220-20AD-8B7C-93DA57EA58FE</targetPk>
+<identifying>false</identifying>
+<nameOnSource>ma nadoblast</nameOnSource>
+<nameOnTarget>muze mit podoblasti</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>69D39542-2F90-A96E-4557-23508F37CDF3</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>69D39542-2F90-A96E-4557-23508F37CDF3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E141F154-4CE1-B9A7-5D2B-52DF125A3A92" name="relace_klicova_slova">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 17:13:19 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="26FE439E-F989-6BC6-D10E-30C7134BDF19">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 17:14:08 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_klic" id="91E3FD23-A131-0EA6-7AAC-79BE2A9CA938">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 17:14:18 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sluzba" id="ADBA4777-333C-9144-98DC-A6BADBA2EC75">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 17:14:46 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="276F92DF-E852-3C93-F0D8-1B419D49FB5D">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 17:15:33 UTC</createdTime>
+<generatorID>7D4A6645-AADF-9AD3-EDD4-0CC0B36886AA</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>2881AE4B-1702-078F-5399-BF5E3DA4D581</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="34F48FDC-C43D-EB35-3B9C-C1F79B4521FC">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 17:16:50 UTC</createdTime>
+<generatorID>6576E751-A9CF-FAB8-58D6-DA44B1B2267B</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>90F326CF-D028-3B1C-A36C-6850B7A19AF0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id11" id="AEC3B705-74FC-5E19-A0F3-A923E9CB9451">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 17:18:08 UTC</createdTime>
+<generatorID>6576E751-A9CF-FAB8-58D6-DA44B1B2267B</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>EBC5D939-864D-C9E4-FB43-719DCE1BAE42</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id12" id="03BC9274-6131-8A5E-94A2-E2A0F5A80E1D">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 17:19:35 UTC</createdTime>
+<generatorID>7D4A6645-AADF-9AD3-EDD4-0CC0B36886AA</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>86F97328-1B1D-753C-E427-F0885C8FB0EE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id3" id="F4297DAB-4651-CA17-F968-2B2AA2F7B154">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:27:04 UTC</createdTime>
+<generatorID>AAD245D4-C3FE-0BB6-B83A-A94ECF8D0BA0</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>D9A0A0BE-ECC3-C4BB-3758-7604723EB2E9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id21" id="57E12EC4-C0E0-AEAC-B202-130DDE7D1265">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:41:35 UTC</createdTime>
+<generatorID>6576E751-A9CF-FAB8-58D6-DA44B1B2267B</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>7D68894F-F9B0-B056-6B2C-6AC17146A291</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id31" id="90B040D5-43A6-0715-63F7-07D74AF5039D">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:43:10 UTC</createdTime>
+<generatorID>6576E751-A9CF-FAB8-58D6-DA44B1B2267B</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>E3FDFFA1-3A25-DEF6-627D-A0F98C9C3E4E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="27982334-5DDA-36F5-8758-156E048BF7C5" name="relace_klicova_slova PK">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 17:14:16 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>26FE439E-F989-6BC6-D10E-30C7134BDF19</attributeRef>
+<attributeRef>276F92DF-E852-3C93-F0D8-1B419D49FB5D</attributeRef>
+<attributeRef>03BC9274-6131-8A5E-94A2-E2A0F5A80E1D</attributeRef>
+<attributeRef>F4297DAB-4651-CA17-F968-2B2AA2F7B154</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_13" directorySegmentName="seg_0" id="A74A3423-650A-7524-8359-F464ECD4B0CD">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:30:51 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<sourcePk>CE19B393-8570-62B5-0FE2-43EA7D16B371</sourcePk>
+<targetPk>57A494D9-FDD5-C8E0-E6FD-DB89C9D86504</targetPk>
+<identifying>false</identifying>
+<nameOnSource>ma typ</nameOnSource>
+<nameOnTarget>jsou v charakteristikach</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F04EF1B4-E420-FCEA-1A73-87C7854DE3F6</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>759A4155-2FEB-814B-1936-616071CE75EF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

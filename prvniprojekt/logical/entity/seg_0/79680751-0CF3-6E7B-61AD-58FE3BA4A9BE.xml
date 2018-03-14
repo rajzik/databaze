@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9A34954D-B1B6-3ECE-B7DF-C5E9E1F5EF47" name="klicova_slova">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79680751-0CF3-6E7B-61AD-58FE3BA4A9BE" name="zobrazeni_sluzeb">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:49:33 UTC</createdTime>
+<createdTime>2018-03-14 18:22:57 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,38 +12,29 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="2881AE4B-1702-078F-5399-BF5E3DA4D581">
+<Attribute name="id" id="D9A0A0BE-ECC3-C4BB-3758-7604723EB2E9">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:49:43 UTC</createdTime>
+<createdTime>2018-03-14 18:23:08 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="text" id="E8677DD0-50AA-1F12-9579-B6C805914E96">
+<Attribute name="prihlaseny" id="C90F16A7-5820-7828-134B-7304DCF4048E">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:49:52 UTC</createdTime>
+<createdTime>2018-03-14 18:23:42 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>255</dataTypeSize>
-<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cetnost_hledani" id="CA90F69B-2E3F-4A21-4C27-373A093395A6">
+<Attribute name="id1" id="A7D071D6-24D7-1570-B552-5120C36B35E1">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 17:17:18 UTC</createdTime>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id1" id="86F97328-1B1D-753C-E427-F0885C8FB0EE">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 17:19:35 UTC</createdTime>
-<generatorID>21670B99-27E8-F7A0-1798-035777B12494</generatorID>
+<createdTime>2018-03-14 18:26:33 UTC</createdTime>
+<generatorID>4DB6300C-E8D5-2B13-B232-AA32A51D5E59</generatorID>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <referedAttribute>E158B40E-0E77-6EA3-B741-F55B3D07B7A2</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -53,14 +44,13 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="A0EC726B-F45F-D04C-1290-7A39C34935B0" name="klicova_slova PK">
+<identifier id="AE629CA8-A7AC-3A65-BECD-310383928AC6" name="zobrazeni_sluzeb PK">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:49:50 UTC</createdTime>
+<createdTime>2018-03-14 18:23:17 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>2881AE4B-1702-078F-5399-BF5E3DA4D581</attributeRef>
-<attributeRef>86F97328-1B1D-753C-E427-F0885C8FB0EE</attributeRef>
+<attributeRef>D9A0A0BE-ECC3-C4BB-3758-7604723EB2E9</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0D0C9EEF-0B4A-C8E0-0AAE-2DFC7BFF88C8" name="relace_sluzby_oblasti">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:11:50 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="6D7B1BCB-6759-5687-F1DC-2954E5746C75">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:12:02 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_oblast" id="23B7E985-5EDA-A45F-48E3-323D27C62E8D">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:12:09 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sluzba" id="9C109D73-39E6-7E33-30CB-12806B608A25">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:12:19 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="2DDC3912-40F9-3CC2-662B-4361CE65B8D1">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:12:39 UTC</createdTime>
+<generatorID>C915A419-71BD-3F40-89B3-9A1C25B59656</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>F542D67D-3B45-B6BD-0264-CE6046E84842</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="0329150A-A40A-6DC7-E59E-42C512DB3CB3">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:13:08 UTC</createdTime>
+<generatorID>39E0CED4-60F5-D580-5653-EA2719278D90</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>90F326CF-D028-3B1C-A36C-6850B7A19AF0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id11" id="AA95EE5A-3601-CD80-DA0D-05B8AE0A0CDD">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:13:08 UTC</createdTime>
+<generatorID>39E0CED4-60F5-D580-5653-EA2719278D90</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>EBC5D939-864D-C9E4-FB43-719DCE1BAE42</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id21" id="69F6A59D-0F09-FABA-F6D8-7B1623B0A848">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:41:35 UTC</createdTime>
+<generatorID>39E0CED4-60F5-D580-5653-EA2719278D90</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>7D68894F-F9B0-B056-6B2C-6AC17146A291</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id3" id="581ED70D-74FB-313B-A986-9B2BD8BA2528">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:43:10 UTC</createdTime>
+<generatorID>39E0CED4-60F5-D580-5653-EA2719278D90</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>E3FDFFA1-3A25-DEF6-627D-A0F98C9C3E4E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0F6C7ED8-567D-FF1F-F943-90E8339A06C9" name="relace_sluzby_oblasti PK">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:12:08 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6D7B1BCB-6759-5687-F1DC-2954E5746C75</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

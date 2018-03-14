@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B0BC1ECA-9D1B-B0C7-EFE5-AF4AA0FE31D9" name="cinnosti">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E581D02B-2FFB-B0DA-88F6-7CF325006E7D" name="pravnicke_osoby">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:41:38 UTC</createdTime>
+<createdTime>2018-03-14 18:07:33 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,18 +12,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="0A5D7F6D-3FA7-3A5B-A2A6-0C01CF10C664">
+<Attribute name="id" id="CF6DD757-3A4A-F556-ABB4-6D8F0EE161EA">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:41:45 UTC</createdTime>
+<createdTime>2018-03-14 18:07:41 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nazev" id="AC843938-62F3-2500-8359-064256AEACB8">
+<Attribute name="nazev" id="2425BD50-950E-8D1B-3A9D-1E2A16B82AE8">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:41:59 UTC</createdTime>
+<createdTime>2018-03-14 18:07:48 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -33,13 +33,13 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="2CBD427C-0E56-16B0-4537-185194A5B811" name="cinnosti PK">
+<identifier id="BC48EA13-321B-0DF4-2A30-C7B1093B0B4F" name="pravnicke_osoby PK">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:41:57 UTC</createdTime>
+<createdTime>2018-03-14 18:07:47 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>0A5D7F6D-3FA7-3A5B-A2A6-0C01CF10C664</attributeRef>
+<attributeRef>CF6DD757-3A4A-F556-ABB4-6D8F0EE161EA</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

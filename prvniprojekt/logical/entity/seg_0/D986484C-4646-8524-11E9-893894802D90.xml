@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9A34954D-B1B6-3ECE-B7DF-C5E9E1F5EF47" name="klicova_slova">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D986484C-4646-8524-11E9-893894802D90" name="fyzicke_osoby">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:49:33 UTC</createdTime>
+<createdTime>2018-03-14 18:06:29 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,18 +12,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="2881AE4B-1702-078F-5399-BF5E3DA4D581">
+<Attribute name="id" id="1DD75BA9-165E-8E53-6FAA-FAE74C802E27">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:49:43 UTC</createdTime>
+<createdTime>2018-03-14 18:06:41 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="text" id="E8677DD0-50AA-1F12-9579-B6C805914E96">
+<Attribute name="nazev" id="08A53387-93F7-8F58-5096-DF8F2670BE3A">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:49:52 UTC</createdTime>
+<createdTime>2018-03-14 18:06:47 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
@@ -31,21 +31,30 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cetnost_hledani" id="CA90F69B-2E3F-4A21-4C27-373A093395A6">
+<Attribute name="ico" id="CD20437C-EDB2-9271-68B7-E41FED1C0410">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 17:17:18 UTC</createdTime>
+<createdTime>2018-03-14 18:07:04 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="86F97328-1B1D-753C-E427-F0885C8FB0EE">
+<Attribute name="dic" id="737BF7AF-7773-E6E9-FF4B-2EDA8535E405">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 17:19:35 UTC</createdTime>
-<generatorID>21670B99-27E8-F7A0-1798-035777B12494</generatorID>
+<createdTime>2018-03-14 18:07:11 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>E158B40E-0E77-6EA3-B741-F55B3D07B7A2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="92A9A255-EC0C-8927-9D3D-E9C4DDC95A62">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:36:45 UTC</createdTime>
+<generatorID>66418CB1-F84D-D448-7575-F8D9934AC74B</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>EFC383F9-4229-27AB-C712-70778C4ED66C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
@@ -53,14 +62,13 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="A0EC726B-F45F-D04C-1290-7A39C34935B0" name="klicova_slova PK">
+<identifier id="57C2561D-148C-ACFA-07AF-0BBF598CFE30" name="fyzicke_osoby PK">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:49:50 UTC</createdTime>
+<createdTime>2018-03-14 18:06:46 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>2881AE4B-1702-078F-5399-BF5E3DA4D581</attributeRef>
-<attributeRef>86F97328-1B1D-753C-E427-F0885C8FB0EE</attributeRef>
+<attributeRef>1DD75BA9-165E-8E53-6FAA-FAE74C802E27</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

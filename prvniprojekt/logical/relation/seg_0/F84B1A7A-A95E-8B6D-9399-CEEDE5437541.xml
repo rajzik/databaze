@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="nabizi" directorySegmentName="seg_0" id="F84B1A7A-A95E-8B6D-9399-CEEDE5437541">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 17:18:08 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<sourcePk>2CBD427C-0E56-16B0-4537-185194A5B811</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>jsou ve sluzbach</nameOnSource>
+<nameOnTarget>ma cinnost</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B0BC1ECA-9D1B-B0C7-EFE5-AF4AA0FE31D9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D7E094AA-D368-9CDD-2298-90F2884A843C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_8" directorySegmentName="seg_0" id="C915A419-71BD-3F40-89B3-9A1C25B59656">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-14 18:12:39 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<sourcePk>24F44ECF-2220-20AD-8B7C-93DA57EA58FE</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>jsou ve sluzbach</nameOnSource>
+<nameOnTarget>maji vztah</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>69D39542-2F90-A96E-4557-23508F37CDF3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>0D0C9EEF-0B4A-C8E0-0AAE-2DFC7BFF88C8</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
