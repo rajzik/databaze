@@ -61,17 +61,6 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="F1EFB5FB-7D88-970C-158B-CB668FF3B91D">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 18:28:37 UTC</createdTime>
-<generatorID>99303206-F0BC-14F3-6295-063D4B9EC6F7</generatorID>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>D9A0A0BE-ECC3-C4BB-3758-7604723EB2E9</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="id2" id="C2948865-7180-3C20-2022-3001DC299B99">
 <createdBy>veprs</createdBy>
 <createdTime>2018-03-14 18:38:35 UTC</createdTime>
@@ -79,17 +68,6 @@
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <nullsAllowed>true</nullsAllowed>
 <referedAttribute>CF6DD757-3A4A-F556-ABB4-6D8F0EE161EA</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id3" id="F9658DA1-48F2-0AA5-E23C-BE955BAD3EDD">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 19:01:43 UTC</createdTime>
-<generatorID>445878D0-FAE4-BC68-A6FC-121D86FE81A5</generatorID>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>D9A0A0BE-ECC3-C4BB-3758-7604723EB2E9</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>

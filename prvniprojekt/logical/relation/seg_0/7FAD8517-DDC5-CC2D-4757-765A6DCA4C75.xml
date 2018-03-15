@@ -1,20 +1,20 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_40" directorySegmentName="seg_0" id="1D1ADC15-2BB1-A9EA-C952-93D1DA625947">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_43" directorySegmentName="seg_0" id="7FAD8517-DDC5-CC2D-4757-765A6DCA4C75">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 22:01:04 UTC</createdTime>
+<createdTime>2018-03-15 16:27:58 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <sourceTransferable>false</sourceTransferable>
 <targetTransferable>false</targetTransferable>
 <sourcePk>8BE14EC0-B998-575F-0C4E-CB173CFEAE33</sourcePk>
-<identifying>true</identifying>
-<nameOnSource>prijima</nameOnSource>
-<nameOnTarget>zpravu</nameOnTarget>
+<identifying>false</identifying>
+<nameOnSource>jsou prijimany</nameOnSource>
+<nameOnTarget>jsou ve vztahu</nameOnTarget>
 <optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>87C553D6-A58E-E22A-9D5C-479DC36908A7</sourceEntity>
 <targetCardinalityString>*</targetCardinalityString>
-<targetEntity>97077BE6-785E-F02B-993F-758D5AA0D003</targetEntity>
+<targetEntity>D1D57910-32E7-9F08-FF7A-8757BC153444</targetEntity>
 <transferable>true</transferable>
 <deleteRule>NO ACTION</deleteRule>
 </Relation>

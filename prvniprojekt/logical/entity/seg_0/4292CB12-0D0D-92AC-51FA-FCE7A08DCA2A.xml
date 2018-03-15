@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E141F154-4CE1-B9A7-5D2B-52DF125A3A92" name="relace_klicova_slova">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4292CB12-0D0D-92AC-51FA-FCE7A08DCA2A" name="relace_zobrazeni_sluzby">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 17:13:19 UTC</createdTime>
+<createdTime>2018-03-15 16:09:49 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,59 +12,37 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="26FE439E-F989-6BC6-D10E-30C7134BDF19">
+<Attribute name="id" id="0425E38C-F6C3-2ACA-EB9F-69D7853070D2">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 17:14:08 UTC</createdTime>
+<createdTime>2018-03-15 16:10:04 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_klic" id="91E3FD23-A131-0EA6-7AAC-79BE2A9CA938">
+<Attribute name="id_zobrazeni" id="153CE067-B9D3-E4B5-DF74-358176837EFC">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 17:14:18 UTC</createdTime>
+<createdTime>2018-03-15 16:10:10 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_sluzba" id="ADBA4777-333C-9144-98DC-A6BADBA2EC75">
+<Attribute name="id_sluzby" id="BDABD95E-7664-082C-C077-6B00D076283C">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 17:14:46 UTC</createdTime>
+<createdTime>2018-03-15 16:10:21 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="276F92DF-E852-3C93-F0D8-1B419D49FB5D">
+<Attribute name="id1" id="6F5B4BEC-FC68-4C85-86DE-0265AFAE6275">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 17:15:33 UTC</createdTime>
-<generatorID>7D4A6645-AADF-9AD3-EDD4-0CC0B36886AA</generatorID>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>2881AE4B-1702-078F-5399-BF5E3DA4D581</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id2" id="34F48FDC-C43D-EB35-3B9C-C1F79B4521FC">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 17:16:50 UTC</createdTime>
-<generatorID>6576E751-A9CF-FAB8-58D6-DA44B1B2267B</generatorID>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>90F326CF-D028-3B1C-A36C-6850B7A19AF0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id3" id="F4297DAB-4651-CA17-F968-2B2AA2F7B154">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 18:27:04 UTC</createdTime>
-<generatorID>AAD245D4-C3FE-0BB6-B83A-A94ECF8D0BA0</generatorID>
+<createdTime>2018-03-15 16:10:44 UTC</createdTime>
+<generatorID>F6B0135E-A0DA-05BB-BEAF-67E43A40907C</generatorID>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <referedAttribute>D9A0A0BE-ECC3-C4BB-3758-7604723EB2E9</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -72,10 +50,21 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id21" id="57E12EC4-C0E0-AEAC-B202-130DDE7D1265">
+<Attribute name="id2" id="7934C2B6-43C5-DED2-C88A-0E88D5E34BF4">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 18:41:35 UTC</createdTime>
-<generatorID>6576E751-A9CF-FAB8-58D6-DA44B1B2267B</generatorID>
+<createdTime>2018-03-15 16:12:12 UTC</createdTime>
+<generatorID>760B8E3E-FE2D-BE57-378D-541493416A7C</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>90F326CF-D028-3B1C-A36C-6850B7A19AF0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id21" id="106E2A50-9675-1F04-DC7C-8F44ACF331A6">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-15 16:12:12 UTC</createdTime>
+<generatorID>760B8E3E-FE2D-BE57-378D-541493416A7C</generatorID>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <referedAttribute>7D68894F-F9B0-B056-6B2C-6AC17146A291</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -83,10 +72,10 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id31" id="90B040D5-43A6-0715-63F7-07D74AF5039D">
+<Attribute name="id3" id="A79F9961-A01C-080B-B160-E17978D0763F">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 18:43:10 UTC</createdTime>
-<generatorID>6576E751-A9CF-FAB8-58D6-DA44B1B2267B</generatorID>
+<createdTime>2018-03-15 16:12:12 UTC</createdTime>
+<generatorID>760B8E3E-FE2D-BE57-378D-541493416A7C</generatorID>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <referedAttribute>E3FDFFA1-3A25-DEF6-627D-A0F98C9C3E4E</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
@@ -96,15 +85,14 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="27982334-5DDA-36F5-8758-156E048BF7C5" name="relace_klicova_slova PK">
+<identifier id="DA24B942-5A80-9D19-1241-EE040BEF25CC" name="relace_zobrazeni_sluzby PK">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 17:14:16 UTC</createdTime>
+<createdTime>2018-03-15 16:10:09 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>26FE439E-F989-6BC6-D10E-30C7134BDF19</attributeRef>
-<attributeRef>276F92DF-E852-3C93-F0D8-1B419D49FB5D</attributeRef>
-<attributeRef>F4297DAB-4651-CA17-F968-2B2AA2F7B154</attributeRef>
+<attributeRef>0425E38C-F6C3-2ACA-EB9F-69D7853070D2</attributeRef>
+<attributeRef>6F5B4BEC-FC68-4C85-86DE-0265AFAE6275</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

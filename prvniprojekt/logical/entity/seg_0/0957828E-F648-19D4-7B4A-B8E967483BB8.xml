@@ -12,4 +12,40 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="71A55A4B-F5BE-DE49-ACBF-EAB25C47DB24">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-15 16:18:16 UTC</createdTime>
+<generatorID>82E7E01C-41CC-6CF6-1227-7730F2C04DAB</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>EFC383F9-4229-27AB-C712-70778C4ED66C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id1" id="D6D44703-5979-795C-7D35-E6E856A5F9A6">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-15 16:18:45 UTC</createdTime>
+<generatorID>8C1F73A6-B5DA-74E8-AC5B-7C4C6226DF4F</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>EFC383F9-4229-27AB-C712-70778C4ED66C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="62F3C9EF-50F7-107E-221B-58CD310D7EED" name="nabidka PK">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-15 16:18:16 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>71A55A4B-F5BE-DE49-ACBF-EAB25C47DB24</attributeRef>
+<attributeRef>D6D44703-5979-795C-7D35-E6E856A5F9A6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

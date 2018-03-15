@@ -31,6 +31,50 @@
 <dataTypeSize>255</dataTypeSize>
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="id1" id="4D67F22F-92A0-F5B0-9701-70965F776B70">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-15 16:05:44 UTC</createdTime>
+<generatorID>F84B1A7A-A95E-8B6D-9399-CEEDE5437541</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>90F326CF-D028-3B1C-A36C-6850B7A19AF0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id2" id="746B3AEB-1BD5-DDCE-0277-4696111B3682">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-15 16:05:44 UTC</createdTime>
+<generatorID>F84B1A7A-A95E-8B6D-9399-CEEDE5437541</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>7D68894F-F9B0-B056-6B2C-6AC17146A291</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id3" id="FF40A780-13B5-A479-208D-6BA4ED974776">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-15 16:05:44 UTC</createdTime>
+<generatorID>F84B1A7A-A95E-8B6D-9399-CEEDE5437541</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>E3FDFFA1-3A25-DEF6-627D-A0F98C9C3E4E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="definice" id="98365C51-6854-80E3-2B38-24A91CC8B7DC">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-15 16:23:17 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<dataTypeSize>1000</dataTypeSize>
+<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="2CBD427C-0E56-16B0-4537-185194A5B811" name="cinnosti PK">

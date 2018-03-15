@@ -12,4 +12,17 @@
 <maxVolumes>9999999</maxVolumes>
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="738A950B-A080-E577-9677-321B475035FC">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-15 16:20:50 UTC</createdTime>
+<generatorID>B6DCDD3A-98F7-CB4D-BCE5-C83FFEA75A0C</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>EFC383F9-4229-27AB-C712-70778C4ED66C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
 </Entity>

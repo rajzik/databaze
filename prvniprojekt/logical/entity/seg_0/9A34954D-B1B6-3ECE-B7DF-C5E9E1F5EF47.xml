@@ -40,17 +40,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="86F97328-1B1D-753C-E427-F0885C8FB0EE">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 17:19:35 UTC</createdTime>
-<generatorID>21670B99-27E8-F7A0-1798-035777B12494</generatorID>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>E158B40E-0E77-6EA3-B741-F55B3D07B7A2</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="A0EC726B-F45F-D04C-1290-7A39C34935B0" name="klicova_slova PK">
@@ -60,7 +49,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>2881AE4B-1702-078F-5399-BF5E3DA4D581</attributeRef>
-<attributeRef>86F97328-1B1D-753C-E427-F0885C8FB0EE</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

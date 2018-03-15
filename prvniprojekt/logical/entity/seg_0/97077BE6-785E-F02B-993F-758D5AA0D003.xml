@@ -31,72 +31,6 @@
 <dataTypeSize>1000</dataTypeSize>
 <ownDataTypeParameters>1000,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id1" id="F3D5E64D-2979-D4EB-1969-33ECED882394">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 21:57:11 UTC</createdTime>
-<generatorID>2B826A9C-F220-D6F4-3F0E-98284B3AA53D</generatorID>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>90F326CF-D028-3B1C-A36C-6850B7A19AF0</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id11" id="AA52072A-468C-8D73-DD42-92AD5C689A13">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 21:57:11 UTC</createdTime>
-<generatorID>2B826A9C-F220-D6F4-3F0E-98284B3AA53D</generatorID>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>EBC5D939-864D-C9E4-FB43-719DCE1BAE42</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id2" id="2994F19B-7245-C273-4A86-E002A4288F89">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 21:57:11 UTC</createdTime>
-<generatorID>2B826A9C-F220-D6F4-3F0E-98284B3AA53D</generatorID>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>7D68894F-F9B0-B056-6B2C-6AC17146A291</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id3" id="1D62E9DA-4F81-46AC-E6EF-72A9D254EF0D">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 21:57:11 UTC</createdTime>
-<generatorID>2B826A9C-F220-D6F4-3F0E-98284B3AA53D</generatorID>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>E3FDFFA1-3A25-DEF6-627D-A0F98C9C3E4E</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id4" id="20FB906D-68AB-E2A8-6B62-AA5ACCABACD7">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 21:58:41 UTC</createdTime>
-<generatorID>D775F169-8375-D7ED-242A-6DC3C3833568</generatorID>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>EFC383F9-4229-27AB-C712-70778C4ED66C</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id5" id="A786BEDD-7E23-1437-30AA-EC5573E86DA4">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 22:01:04 UTC</createdTime>
-<generatorID>1D1ADC15-2BB1-A9EA-C952-93D1DA625947</generatorID>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>EFC383F9-4229-27AB-C712-70778C4ED66C</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="C7BCEF19-A5F3-6473-834C-0198FB9F1B1A" name="zpravy PK">
@@ -106,8 +40,6 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>161B1763-693A-43AC-E5C6-028C6B12AA0C</attributeRef>
-<attributeRef>20FB906D-68AB-E2A8-6B62-AA5ACCABACD7</attributeRef>
-<attributeRef>A786BEDD-7E23-1437-30AA-EC5573E86DA4</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D7E094AA-D368-9CDD-2298-90F2884A843C" name="sluzby">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="639BA71C-5E8E-B8CA-9F61-28C00A87E5C3" name="relace_zpravy_sluzby">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:39:18 UTC</createdTime>
+<createdTime>2018-03-15 16:15:36 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <adequatelyNormalized>NO</adequatelyNormalized>
 <expectedVolumes>0</expectedVolumes>
@@ -12,80 +12,75 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id" id="90F326CF-D028-3B1C-A36C-6850B7A19AF0">
+<Attribute name="id" id="ED6371A8-7396-75F7-E5FF-4B7E6B5C3734">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:39:35 UTC</createdTime>
+<createdTime>2018-03-15 16:15:51 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="text" id="5B117FA1-FB20-085C-3B7E-6BEE506179D8">
+<Attribute name="id_sluzby" id="5963D193-EC06-5CD6-D46F-758C2036CEF2">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:39:45 UTC</createdTime>
+<createdTime>2018-03-15 16:15:58 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>1000</dataTypeSize>
-<ownDataTypeParameters>1000,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="id2" id="7D68894F-F9B0-B056-6B2C-6AC17146A291">
-<createdBy>veprs</createdBy>
-<createdTime>2018-03-14 18:41:35 UTC</createdTime>
-<generatorID>82E7E01C-41CC-6CF6-1227-7730F2C04DAB</generatorID>
-<ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>EFC383F9-4229-27AB-C712-70778C4ED66C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id3" id="E3FDFFA1-3A25-DEF6-627D-A0F98C9C3E4E">
+<Attribute name="id_zpravy" id="B7A41E05-A38D-EE3C-55CA-C2CCD9A87053">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 18:43:10 UTC</createdTime>
-<generatorID>8C1F73A6-B5DA-74E8-AC5B-7C4C6226DF4F</generatorID>
+<createdTime>2018-03-15 16:16:09 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>EFC383F9-4229-27AB-C712-70778C4ED66C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id6" id="A999D72F-9713-336C-51C5-56DF43F0322A">
+<Attribute name="id4" id="EA666857-7413-4EB4-8066-D534DC445D3F">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-14 21:50:19 UTC</createdTime>
-<generatorID>6BB4734C-B6D2-C2D9-BB61-76D2DB75EBDB</generatorID>
+<createdTime>2018-03-15 16:19:38 UTC</createdTime>
+<generatorID>C0FA043F-7473-AC0A-2E6F-B414AB3F3621</generatorID>
 <ownerDesignName>prvniprojekt</ownerDesignName>
-<referedAttribute>1A8C7A7E-3532-9B87-4751-BBFE40ACB09C</referedAttribute>
+<referedAttribute>161B1763-693A-43AC-E5C6-028C6B12AA0C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="definice" id="3FC3D380-F720-E06A-4AF4-40F026ED405F">
+<Attribute name="id1" id="029A5B0B-ECE0-E14C-1B2B-A06C0D33117B">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-15 16:24:47 UTC</createdTime>
+<createdTime>2018-03-15 16:20:41 UTC</createdTime>
+<generatorID>F54244D7-0B43-4F64-70B0-BB7EF9F0313E</generatorID>
 <ownerDesignName>prvniprojekt</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
+<referedAttribute>71A55A4B-F5BE-DE49-ACBF-EAB25C47DB24</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
-<dataTypeSize>1000</dataTypeSize>
-<ownDataTypeParameters>1000,,</ownDataTypeParameters>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id11" id="69862674-813E-0796-F228-2AA8DD60C923">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-15 16:20:41 UTC</createdTime>
+<generatorID>F54244D7-0B43-4F64-70B0-BB7EF9F0313E</generatorID>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<referedAttribute>D6D44703-5979-795C-7D35-E6E856A5F9A6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="E82CA35A-767D-463E-9B29-5D5B85A21FD7" name="inzeraty PK">
+<identifier id="8FCFFB67-9BD5-1FE5-570B-C1E3156DE525" name="relace_zpravy_sluzby PK">
 <createdBy>veprs</createdBy>
-<createdTime>2018-03-13 18:39:41 UTC</createdTime>
+<createdTime>2018-03-15 16:15:57 UTC</createdTime>
 <ownerDesignName>prvniprojekt</ownerDesignName>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>90F326CF-D028-3B1C-A36C-6850B7A19AF0</attributeRef>
-<attributeRef>7D68894F-F9B0-B056-6B2C-6AC17146A291</attributeRef>
-<attributeRef>E3FDFFA1-3A25-DEF6-627D-A0F98C9C3E4E</attributeRef>
+<attributeRef>ED6371A8-7396-75F7-E5FF-4B7E6B5C3734</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

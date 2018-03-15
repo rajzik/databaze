@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_39" directorySegmentName="seg_0" id="C0FA043F-7473-AC0A-2E6F-B414AB3F3621">
+<createdBy>veprs</createdBy>
+<createdTime>2018-03-15 16:19:38 UTC</createdTime>
+<ownerDesignName>prvniprojekt</ownerDesignName>
+<sourceTransferable>false</sourceTransferable>
+<targetTransferable>false</targetTransferable>
+<sourcePk>C7BCEF19-A5F3-6473-834C-0198FB9F1B1A</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>je o sluzbe</nameOnSource>
+<nameOnTarget>je ve vztahu</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>97077BE6-785E-F02B-993F-758D5AA0D003</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>639BA71C-5E8E-B8CA-9F61-28C00A87E5C3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
