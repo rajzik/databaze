@@ -1,0 +1,29 @@
+
+CREATE OR REPLACE PROCEDURE oddeleni_info
+IS help pls_integer; 
+
+CURSOR curs is 
+    SELECT DISTINCT ODDELENI.NAZEV, ODDELENI.ID_ODDELENI, count (DISTINCT ID_KNIHY) as cnt from KNIHA 
+    JOIN EXEMPLAR USING (ID_KNIHY)
+    JOIN ODDELENI ON EXEMPLAR.ID_ODDELENI = ODDELENI.ID_ODDELENI
+    GROUP BY ODDELENI.NAZEV, ODDELENI.ID_ODDELENI;
+
+begin
+DBMS_OUTPUT.ENABLE(1000000);
+
+for frs in curs
+loop
+    DBMS_OUTPUT.PUT_LINE('Nazev oddeleni: ' || frs.NAZEV || ': ' || frs.cnt);
+    help := LENGTH('Nazev oddeleni: ' || frs.NAZEV || ': ' || frs.cnt) - 1;
+    -- hnusnej workaround
+
+    DBMS_OUTPUT.PUT_LINE('' || LPAD(' ', help, '*') || '');
+    
+    for BOOK in (SELECT NAZEV, AUTOR, POCET_STRAN, NAKLADATEL || ' (' || ROK_VYDANI || ')' as NAKLADATE, ISBN from KNIHA 
+                    WHERE ID_KNIHY in (SELECT ID_KNIHY from EXEMPLAR where id_oddeleni = frs.id_oddeleni))
+        loop
+            DBMS_OUTPUT.PUT_LINE('    -' || UPPER(BOOK.NAZEV) || ', ' || BOOK.AUTOR || ', ' || BOOK.POCET_STRAN || ', ' || BOOK.POCET_STRAN || ', ' || BOOK.NAKLADATE || ', ' || BOOK.ISBN);
+        end loop;
+end loop;
+
+end;

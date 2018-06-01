@@ -1,0 +1,20 @@
+
+CREATE OR REPLACE VIEW nase_knihovna (IDEXEMPLARE, NAZEV, AUTOR, NAKLADATEL, EDICE, MISTO, ROK, VLASTNIK) 
+    as
+    SELECT 
+          ID_EXEMPLARE, 
+          KNIHA.NAZEV, 
+          AUTOR, 
+          NVL(NAKLADATEL, 'Neuvedeno') AS NAKLADATEL, 
+          NVL(EDICE, 'Neuvedeno') EDICE, 
+          MISTO_VYDANI, 
+          ROK_VYDANI, 
+          LOGIN as VLASTNIK
+        FROM KNIHA
+        JOIN EXEMPLAR USING(ID_KNIHY)
+        JOIN OSOBA USING(ID_OSOBY)
+        JOIN ODDELENI 
+          ON ODDELENI.ID_ODDELENI = EXEMPLAR.ID_ODDELENI
+        WHERE ODDELENI.NAZEV = 'Oddělení infrastruktury' AND ROK_VYDANI BETWEEN '1980' AND '2010'
+        WITH CHECK OPTION;
+        

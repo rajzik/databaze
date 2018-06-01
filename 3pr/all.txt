@@ -1,0 +1,206 @@
+
+CREATE OR REPLACE PROCEDURE oddeleni_info
+IS help pls_integer; 
+
+CURSOR curs is 
+    SELECT DISTINCT ODDELENI.NAZEV, ODDELENI.ID_ODDELENI, count (DISTINCT ID_KNIHY) as cnt from KNIHA 
+    JOIN EXEMPLAR USING (ID_KNIHY)
+    JOIN ODDELENI ON EXEMPLAR.ID_ODDELENI = ODDELENI.ID_ODDELENI
+    GROUP BY ODDELENI.NAZEV, ODDELENI.ID_ODDELENI;
+
+begin
+DBMS_OUTPUT.ENABLE(1000000);
+
+for frs in curs
+loop
+    DBMS_OUTPUT.PUT_LINE('Nazev oddeleni: ' || frs.NAZEV || ': ' || frs.cnt);
+    help := LENGTH('Nazev oddeleni: ' || frs.NAZEV || ': ' || frs.cnt) - 1;
+    -- hnusnej workaround
+
+    DBMS_OUTPUT.PUT_LINE('' || LPAD(' ', help, '*') || '');
+    
+    for BOOK in (SELECT NAZEV, AUTOR, POCET_STRAN, NAKLADATEL || ' (' || ROK_VYDANI || ')' as NAKLADATE, ISBN from KNIHA 
+                    WHERE ID_KNIHY in (SELECT ID_KNIHY from EXEMPLAR where id_oddeleni = frs.id_oddeleni))
+        loop
+            DBMS_OUTPUT.PUT_LINE('    -' || UPPER(BOOK.NAZEV) || ', ' || BOOK.AUTOR || ', ' || BOOK.POCET_STRAN || ', ' || BOOK.POCET_STRAN || ', ' || BOOK.NAKLADATE || ', ' || BOOK.ISBN);
+        end loop;
+end loop;
+
+end;
+
+
+--- 2 
+
+CREATE OR REPLACE PROCEDURE STATISTIKA_VYPUJCEK(p_osoby_id IN NUMBER)
+    IS FNAME VARCHAR2(10000);
+    EXEMPLARCOUNT NUMBER;
+    OWNEDCOUNT NUMBER; 
+    REPEATCOUNT NUMBER;
+begin
+    SELECT PRIJMENI || ' ' || JMENO INTO FNAME FROM OSOBA WHERE ID_OSOBY = p_osoby_id;
+    IF SQL%NOTFOUND THEN RAISE_APPLICATION_ERROR(-123456, 'osoba neexistuje!');
+    ELSE 
+      SELECT COUNT(ID_VYPUJCKY) INTO EXEMPLARCOUNT FROM VYPUJCKA WHERE ID_OSOBY = p_osoby_id;
+
+        SELECT COUNT(ID_VYPUJCKY) INTO OWNEDCOUNT FROM VYPUJCKA 
+            JOIN EXEMPLAR ON (VYPUJCKA.ID_EXEMPLARE = EXEMPLAR.ID_EXEMPLARE)
+            JOIN OSOBA ON (VYPUJCKA.ID_OSOBY = OSOBA.ID_OSOBY)
+            WHERE EXEMPLAR.ID_OSOBY = p_osoby_id;
+
+        SELECT COUNT(ID_EXEMPLARE) INTO REPEATCOUNT FROM (
+            SELECT ID_EXEMPLARE FROM VYPUJCKA
+            WHERE p_osoby_id = ID_OSOBY
+            HAVING COUNT(ID_EXEMPLARE) > 1
+            GROUP BY ID_EXEMPLARE
+        );
+
+
+        DBMS_OUTPUT.PUT_LINE('' || FNAME || '');
+        DBMS_OUTPUT.PUT_LINE('# pocet vypujcenych exemplaru: ' || EXEMPLARCOUNT);
+        DBMS_OUTPUT.PUT_LINE('# počet vypůjčených exemplářů, jejichž knihu má ve svém držení: ' || OWNEDCOUNT);
+        DBMS_OUTPUT.PUT_LINE('# počet opakovaně vypůjčených knih: ' || REPEATCOUNT);
+
+    END IF;
+END;
+
+
+
+CREATE OR REPLACE PROCEDURE uprav_knihu(p_id_knihy IN NUMBER, p_sloupec IN VARCHAR2, p_hodnota IN VARCHAR2)
+    IS 
+        CLMCOUNT NUMBER;
+        CLMNAMES VARCHAR2(100);
+        CMD VARCHAR2(32767);
+        NOTFOUND EXCEPTION;
+        PRAGMA EXCEPTION_INIT(NOTFOUND, -2291);
+begin
+
+    SELECT COUNT(COLUMN_NAME) INTO CLMCOUNT FROM SYS.ALL_TAB_COLUMNS
+        WHERE TABLE_NAME = 'KNIHA';
+
+    IF  CLMCOUNT <= 0 THEN
+        DBMS_OUTPUT.PUT_LINE('Takovýto sloupec neexistuje');
+        FOR CLMNAMES IN (SELECT COLUMN_NAME FROM ALL_TAB_COLUMNS WHERE UPPER(TABLE_NAME) = 'KNIHA')
+        loop
+            DBMS_OUTPUT.PUT(CLMNAMES.COLUMN_NAME || ', ');
+        END LOOP;
+    ELSE
+        CMD := 'UPDATE KNIHA SET ' || p_sloupec || '=''' || p_hodnota || ' WHERE ID_KNIHY = ' || p_id_knihy;
+        EXECUTE IMMEDIATE CMD;
+    END IF;
+
+    EXCEPTION WHEN NOTFOUND THEN 
+        RAISE_APPLICATION_ERROR(-122345566, 'BOOK NOT FOUND!');
+    WHEN OTHERS THEN
+        RAISE_APPLICATION_ERROR(-111111, 'UNHANDLED EXCEPTION!');
+        DBMS_OUTPUT.PUT_LINE(SQLCODE || ' ' || SQLERRM(SQLCODE));
+
+END;
+
+CREATE OR REPLACE VIEW nase_knihovna (IDEXEMPLARE, NAZEV, AUTOR, NAKLADATEL, EDICE, MISTO, ROK, VLASTNIK) 
+    as
+    SELECT 
+          ID_EXEMPLARE, 
+          KNIHA.NAZEV, 
+          AUTOR, 
+          NVL(NAKLADATEL, 'Neuvedeno') AS NAKLADATEL, 
+          NVL(EDICE, 'Neuvedeno') EDICE, 
+          MISTO_VYDANI, 
+          ROK_VYDANI, 
+          LOGIN as VLASTNIK
+        FROM KNIHA
+        JOIN EXEMPLAR USING(ID_KNIHY)
+        JOIN OSOBA USING(ID_OSOBY)
+        JOIN ODDELENI 
+          ON ODDELENI.ID_ODDELENI = EXEMPLAR.ID_ODDELENI
+        WHERE ODDELENI.NAZEV = 'Oddělení infrastruktury' AND ROK_VYDANI BETWEEN '1980' AND '2010'
+        WITH CHECK OPTION;
+        
+
+
+
+CREATE OR REPLACE FUNCTION MUJ_VYPIS_KNIH(p_id_knihy IN NUMBER)
+    RETURN VARCHAR2
+
+    AS 
+    NME VARCHAR2(1000);
+    AUTHR VARCHAR2(1000);
+    NAKL VARCHAR2(1000);
+    YER NUMBER;
+    PAGECNT NUMBER;
+    EXMPLCNT NUMBER;
+    HELP VARCHAR2(1000);
+begin 
+    SELECT 
+        NAZEV, 
+        AUTOR, 
+        NAKLADATEL, 
+        ROK_VYDANI, 
+        POCET_STRAN, 
+        COUNT(ID_EXEMPLARE)
+    INTO 
+        NME,
+        AUTHR,
+        NAKL,
+        YER,
+        PAGECNT,
+        EXMPLCNT
+    FROM KNIHA
+    JOIN EXEMPLAR USING (ID_KNIHY)
+    WHERE ID_KNIHY = p_id_knihy
+    GROUP BY NAZEV, AUTOR, NAKLADATEL, ROK_VYDANI, POCET_STRAN;
+    IF SQL%NOTFOUND THEN
+        RETURN NULL;
+    END IF;
+
+    HELP := AUTHR || '; ' || NME;
+    IF PAGECNT > 61 THEN
+        HELP := HELP || '; ' || NAKL || '; ' || YER;
+    END IF;
+    IF PAGECNT > 350 THEN
+        HELP := HELP || '; ' || EXMPLCNT;
+    END IF;
+    RETURN HELP || '.';
+END;
+
+
+
+
+
+
+CREATE OR REPLACE TRIGGER DML_OPERATIONS INSTEAD OF INSERT OR UPDATE OR DELETE ON NASE_KNIHOVNA
+
+FOR EACH ROW
+DECLARE
+    HELP NUMBER;
+    INEED NUMBER;
+    SOMEBODY NUMBER;
+
+BEGIN
+
+    CASE
+        WHEN INSERTING THEN
+            DBMS_OUTPUT.PUT_LINE('TOO lazy to do that!');
+        WHEN UPDATING THEN
+            SELECT ID_KNIHY into HELP FROM EXEMPLAR
+            WHERE ID_EXEMPLARE = :OLD.IDEXEMPLARE;
+
+            UPDATE KNIHA SET NAZEV = :NEW.NAZEV, AUTOR = :NEW.AUTOR, NAKLADATEL = :NEW.NAKLADATEL, EDICE = :NEW.EDICE, MISTO_VYDANI = :NEW.MISTO, ROK_VYDANI = :NEW.ROK
+            WHERE ID_KNIHY = HELP;
+
+            SELECT COUNT(*) INTO INEED FROM OSOBA 
+                WHERE LOGIN = :NEW.VLASTNIK;
+
+            IF INEED <= 0 THEN
+                RAISE_APPLICATION_ERROR(-12345, 'Janek jde, a taky vlastnik neexistuje!');
+            ELSE
+                SELECT ID_OSOBY INTO SOMEBODY FROM OSOBA WHERE LOGIN = :NEW.VLASTNIK;
+                UPDATE EXEMPLAR SET ID_OSOBY = SOMEBODY
+                    WHERE ID_EXEMPLARE = :OLD.IDEXEMPLARE;
+            END IF;
+
+        WHEN DELETING THEN
+            DELETE FROM EXEMPLAR
+                WHERE ID_EXEMPLARE = :OLD.IDEXEMPLARE;
+    END CASE;
+
+END;

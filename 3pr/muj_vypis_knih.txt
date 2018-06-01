@@ -1,0 +1,44 @@
+
+CREATE OR REPLACE FUNCTION MUJ_VYPIS_KNIH(p_id_knihy IN NUMBER)
+    RETURN VARCHAR2
+
+    AS 
+    NME VARCHAR2(1000);
+    AUTHR VARCHAR2(1000);
+    NAKL VARCHAR2(1000);
+    YER NUMBER;
+    PAGECNT NUMBER;
+    EXMPLCNT NUMBER;
+    HELP VARCHAR2(1000);
+begin 
+    SELECT 
+        NAZEV, 
+        AUTOR, 
+        NAKLADATEL, 
+        ROK_VYDANI, 
+        POCET_STRAN, 
+        COUNT(ID_EXEMPLARE)
+    INTO 
+        NME,
+        AUTHR,
+        NAKL,
+        YER,
+        PAGECNT,
+        EXMPLCNT
+    FROM KNIHA
+    JOIN EXEMPLAR USING (ID_KNIHY)
+    WHERE ID_KNIHY = p_id_knihy
+    GROUP BY NAZEV, AUTOR, NAKLADATEL, ROK_VYDANI, POCET_STRAN;
+    IF SQL%NOTFOUND THEN
+        RETURN NULL;
+    END IF;
+
+    HELP := AUTHR || '; ' || NME;
+    IF PAGECNT > 61 THEN
+        HELP := HELP || '; ' || NAKL || '; ' || YER;
+    END IF;
+    IF PAGECNT > 350 THEN
+        HELP := HELP || '; ' || EXMPLCNT;
+    END IF;
+    RETURN HELP || '.';
+END;
